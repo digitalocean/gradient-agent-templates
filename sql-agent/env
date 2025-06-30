@@ -1,0 +1,23 @@
+# Auth
+DIGITALOCEAN_TOKEN=""
+DIGITALOCEAN_CONTEXT=""
+
+# Project details
+PROJECT_ID=""
+
+# Database Configuration
+DB_HOST=""
+DB_PORT=0
+DB_NAME=""
+DB_ADMIN_USER=""
+DB_ADMIN_PASSWORD=""
+
+# Agent DB credentials
+AGENT_USER_ID=""
+
+# Tool namespace
+NAMESPACE_LABEL=""
+REGION=""
+
+# Agent Name
+AGENT_NAME=""
