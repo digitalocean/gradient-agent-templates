@@ -1,0 +1,19 @@
+environment:
+  DB_HOST: ${DB_HOST}
+  DB_AGENT_USER: ${DB_AGENT_USER}
+  DB_AGENT_PASSWORD: ${DB_AGENT_PASSWORD}
+  DB_PORT: ${DB_PORT}
+  DB_NAME: ${DB_NAME}
+packages:
+  - name: sql-agent-tools
+    functions:
+      - name: get_schema
+        binary: false
+        runtime: python:3.11
+        web: true
+        webSecure: ${GET_SCHEMA_TOKEN}
+      - name: execute_query
+        binary: false
+        runtime: python:3.11
+        web: true
+        webSecure: ${EXECUTE_QUERY_TOKEN}
