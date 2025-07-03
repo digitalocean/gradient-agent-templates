@@ -1,0 +1,13 @@
+environment:
+  TWILIO_ACCOUNT_SID: ${TWILIO_ACCOUNT_SID}
+  TWILIO_AUTH_TOKEN: ${TWILIO_AUTH_TOKEN}
+  TWILIO_FROM_NUMBER: ${TWILIO_FROM_NUMBER}
+packages:
+  - name: twilio-agent-tools
+    functions:
+      - name: send_message
+        binary: false
+        runtime: python:3.11
+        web: true
+        webSecure: ${SEND_MESSAGE_TOKEN}
+
