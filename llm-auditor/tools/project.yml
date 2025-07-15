@@ -1,0 +1,30 @@
+packages:
+  - name: auditor-tools
+    functions:
+      - name: search
+        binary: false
+        runtime: python:3.11
+        web: true
+        webSecure: ${SEARCH_TOKEN}
+        environment:
+          TAVILY_API_KEY: ${TAVILY_API_KEY}
+      - name: critic
+        binary: false
+        runtime: python:3.11
+        web: true
+        webSecure: ${CRITIC_TOKEN}
+        limits:
+         timeout: 60000
+        environment:
+          CRITIC_AGENT_ENDPOINT: ${CRITIC_AGENT_ENDPOINT}
+          CRITIC_AGENT_ACCESS_KEY: ${CRITIC_AGENT_ACCESS_KEY}
+      - name: revisor
+        binary: false
+        runtime: python:3.11
+        web: true
+        webSecure: ${REVISOR_TOKEN}
+        limits:
+         timeout: 60000
+        environment:
+          REVISOR_AGENT_ENDPOINT: ${REVISOR_AGENT_ENDPOINT}
+          CREVISOR_AGENT_ACCESS_KEY: ${REVISOR_AGENT_ACCESS_KEY}
