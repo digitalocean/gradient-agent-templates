@@ -1,3 +1,2 @@
 pydo
-boto3
 python-dotenv

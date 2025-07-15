@@ -43,7 +43,6 @@ class AgentConfig:
             "region": self.region,
         }
 
-
 @dataclass
 class AgentFunctionConfig:
     agent_uuid: str
@@ -230,7 +229,7 @@ class FunctionDeployer:
             f.write(f"SEND_MESSAGE_TOKEN={secrets.token_urlsafe(16)}\n")
             f.write(f"TWILIO_ACCOUNT_SID={twilio_sid}\n")
             f.write(f"TWILIO_AUTH_TOKEN={twilio_token}\n")
-            f.write(f"WILIO_FROM_NUMBER={twilio_from_number}\n")
+            f.write(f"TWILIO_FROM_NUMBER={twilio_from_number}\n")
 
     def deploy_function(
         self,
