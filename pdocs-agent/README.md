@@ -1,6 +1,6 @@
 # 📄 Product Documentation QA Agent Template
 
-This project is a template for deploying a Retrieval-Augmented Generation (RAG) agent on the [DigitalOcean GenAI Platform](https://www.digitalocean.com/products/gen-ai) that answers user questions based on your product documentation. 
+This project is a template for deploying a Retrieval-Augmented Generation (RAG) agent on the [DigitalOcean Gradient Platform](https://www.digitalocean.com/products/gradient) that answers user questions based on your product documentation. 
 
 This template will do the following:
 
@@ -27,7 +27,7 @@ You will also need:
 
 * A valid DigitalOcean API Token
 * A valid Project ID
-* You must have accepted the terms and conditions to use LLaMA 3.3 70B on the GenAI platform (you can do this by manually creating a new agent using LLaMA 3.3 70B as the base model).
+* You must have accepted the terms and conditions to use LLaMA 3.3 70B on the Gradient Platform (you can do this by manually creating a new agent using LLaMA 3.3 70B as the base model).
 
 
 ## 🛠️ What this Template Does
@@ -38,7 +38,7 @@ When you run `deploy_template.py`, the script:
 2. **Creates a knowledge base** connected to this bucket and indexes your docs.
 
    * You can either create a **new OpenSearch DB** or use an **existing one**.
-3. **Creates a GenAI agent** using the indexed KB.
+3. **Creates a Gradient Platform agent** using the indexed KB.
 
    * The agent will be instructed on your product using the name and description provided.
    * The agent is explicitly instructed to not answer questions unrelated to the product, or questions that cannot be answered via the documentation

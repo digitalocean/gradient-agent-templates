@@ -11,7 +11,7 @@ Before deploying this agent, ensure you have:
 
 2. **DigitalOcean access:**
    - Valid DigitalOcean API token
-   - Sufficient privileges to deploy DO Functions and GenAI agents
+   - Sufficient privileges to deploy DigitalOcean Functions and Gradient Platform agents
    - Optional: Valid `doctl` context
 
 3. **Database:**
@@ -29,7 +29,7 @@ The deployment follows these steps:
 2. **Function Deployment** - Deploys secure web functions via `doctl`:
    - `get_schema` - Fetches database schema information
    - `execute_query` - Executes SELECT queries safely
-3. **Agent Creation** - Creates the GenAI agent using `pydo`
+3. **Agent Creation** - Creates the Gradient Platform agent using `pydo`
 4. **Tool Integration** - Attaches the database functions to the agent
 
 ## Usage
