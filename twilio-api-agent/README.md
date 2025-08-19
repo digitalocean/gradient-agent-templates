@@ -1,6 +1,6 @@
 # 📣 Twilio Marketing Agent Template
 
-This project provides a template for deploying a Generative AI Agent that can generate and send marketing text messages using [Twilio](https://www.twilio.com/) on the [DigitalOcean GenAI Platform](https://www.digitalocean.com/products/gen-ai).
+This project provides a template for deploying a Generative AI Agent that can generate and send marketing text messages using [Twilio](https://www.twilio.com/) on the [DigitalOcean Gradient Platform](https://www.digitalocean.com/products/gradient).
 
 
 
@@ -32,7 +32,7 @@ pip install -r requirements.txt
 Running the script:
 
 1. Deploys a serverless function** using `doctl serverless` that sends SMS via Twilio's messages API.
-2. Creates a new agent on the DigitalOcean GenAI platform.
+2. Creates a new agent on the DigitalOcean Gradient Platform.
 3. Attaches the Twilio messaging tool to the agent so it can send marketing messages on its own.
 
 
