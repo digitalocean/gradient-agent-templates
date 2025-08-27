@@ -50,7 +50,7 @@ doctl auth switch --context <your-context>
 
 * **Ensure access to LLaMA 3.3**:
 
-  * Ensure you have accepted the terms and conditions to use LLaMA 3.3 70B on the DigitalOcean Gradient Platform. You can do this by manually creating a new agent using LLaMA 3.3 70B as the base model.
+  * Ensure you have accepted the terms and conditions to use LLaMA 3.3 70B on the DigitalOcean Gradient™ AI Platform. You can do this by manually creating a new agent using LLaMA 3.3 70B as the base model.
 
 * **Tavily API Key**:
 
@@ -112,7 +112,7 @@ REGION=tor1
 
 ## 📄 Notes
 
-* The ADK version of this sample agent uses sub-agents. The DigitalOcean Gradient Platform  currently only supports routing requests from one agent to another. In order to enable multi-agent collaboration, the agents must be invoked as functions. Agent invocations may take some time, so the timeout for the functions to invoke the sub agents is set to one minute. 
+* The ADK version of this sample agent uses sub-agents. The DigitalOcean Gradient AI Platform  currently only supports routing requests from one agent to another. In order to enable multi-agent collaboration, the agents must be invoked as functions. Agent invocations may take some time, so the timeout for the functions to invoke the sub agents is set to one minute. 
 * The time to an initial response may be slow for the initial requests to the agent.  
 * All the functions are websecure functions. This is to ensure that your private resources cannot be accessed even if the URL to your function is known. Ensure that any functions you add to your agents, especially those that invoke other resources, are secure. 
 * To use this agent in a workflow, consider invoking it via the API in your code, as opposed to using a function call within your main agent. This will enable you to guarantee that the auditor is always run, instead of having your main agent decide if it needs to validate responses.
