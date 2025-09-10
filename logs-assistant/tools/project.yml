@@ -1,0 +1,12 @@
+environment:
+  AGENT_TOKEN: ${AGENT_TOKEN}
+packages:
+  - name: logs-assistant-tools
+    functions:
+      - name: get_logs
+        binary: false
+        runtime: python:3.11
+        web: true
+        webSecure: ${GET_LOGS_TOKEN}
+        limits:
+         timeout: 10000
