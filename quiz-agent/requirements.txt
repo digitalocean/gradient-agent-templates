@@ -1,0 +1,4 @@
+pydo
+gradient
+boto3
+python-dotenv
