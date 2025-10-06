@@ -1,0 +1,3 @@
+LLAMA_3_3_70B_UUID = "d754f2d7-d1f0-11ef-bf8f-4e013e2ddde4"
+EMBEDDING_MODEL_UUID = "22653204-79ed-11ef-bf8f-4e013e2ddde4"
+AGENT_NAME = "Data Analysis Agent"
