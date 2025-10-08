@@ -1,0 +1,28 @@
+environment:
+  SPACES_ACCESS_KEY: ${SPACES_ACCESS_KEY}
+  SPACES_SECRET_KEY: ${SPACES_SECRET_KEY}
+  SPACES_BUCKET: ${SPACES_BUCKET}
+  SPACES_REGION: ${SPACES_REGION}
+packages:
+  - name: data-analysis-agent-tools
+    functions:
+      - name: list_files
+        binary: false
+        runtime: python:3.11
+        web: true
+        webSecure: ${LIST_FILES_TOKEN}
+      - name: load_csv
+        binary: false
+        runtime: python:3.11
+        web: true
+        webSecure: ${LOAD_CSV_TOKEN}
+      - name: get_column_info
+        binary: false
+        runtime: python:3.11
+        web: true
+        webSecure: ${GET_COLUMN_INFO_TOKEN}
+      - name: execute_pandas_code
+        binary: false
+        runtime: python:3.11
+        web: true
+        webSecure: ${EXECUTE_PANDAS_CODE_TOKEN}

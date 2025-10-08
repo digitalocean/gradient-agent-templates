@@ -1,0 +1,6 @@
+pydo
+boto3
+python-dotenv
+gradient==3.0.0b5
+pandas
+numpy
